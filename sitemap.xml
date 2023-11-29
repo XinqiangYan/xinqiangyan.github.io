@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://xinqiangyan.github.io/projects/lowcost/</loc>
+    <lastmod>2022-11-05T19:41:01+05:30</lastmod>
+  </url><url>
     <loc>https://xinqiangyan.github.io/people/people/</loc>
     <lastmod>2022-11-05T19:41:01+05:30</lastmod>
   </url><url>
@@ -15,6 +18,9 @@
     <lastmod>2022-11-05T19:41:01+05:30</lastmod>
   </url><url>
     <loc>https://xinqiangyan.github.io/portfolio/</loc>
+    <lastmod>2022-11-05T19:41:01+05:30</lastmod>
+  </url><url>
+    <loc>https://xinqiangyan.github.io/projects/</loc>
     <lastmod>2022-11-05T19:41:01+05:30</lastmod>
   </url><url>
     <loc>https://xinqiangyan.github.io/</loc>
