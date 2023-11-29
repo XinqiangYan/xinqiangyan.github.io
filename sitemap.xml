@@ -2,10 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://xinqiangyan.github.io/people/people/</loc>
+    <lastmod>2022-11-05T19:41:01+05:30</lastmod>
+  </url><url>
     <loc>https://xinqiangyan.github.io/portfolio/people/</loc>
     <lastmod>2022-11-05T19:41:01+05:30</lastmod>
   </url><url>
     <loc>https://xinqiangyan.github.io/portfolio/work2/</loc>
+    <lastmod>2022-11-05T19:41:01+05:30</lastmod>
+  </url><url>
+    <loc>https://xinqiangyan.github.io/people/</loc>
     <lastmod>2022-11-05T19:41:01+05:30</lastmod>
   </url><url>
     <loc>https://xinqiangyan.github.io/portfolio/</loc>
