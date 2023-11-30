@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Yan Lab</title>
+    <title>MRI Coil Lab</title>
     <link>https://xinqiangyan.github.io/</link>
-    <description>Recent content on Yan Lab</description>
+    <description>Recent content on MRI Coil Lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 05 Nov 2022 19:41:01 +0530</lastBuildDate><atom:link href="https://xinqiangyan.github.io/index.xml" rel="self" type="application/rss+xml" />
@@ -50,6 +50,15 @@
       
       <guid>https://xinqiangyan.github.io/portfolio/work2/</guid>
       <description>&lt;p&gt;Dr. Yan&amp;rsquo;s research focuses on developing engineering solutions to the technical challenges in magnetic resonate imaging and MR-guided focused ultrasound, aiming to improve transmit field and B0 homogeneity, reduce the heating near implants, speed up the acquisition speed, reduce the motion artifacts and boost the imaging quality.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>RF Coils (transmitter and detector) for high field MRI</title>
+      <link>https://xinqiangyan.github.io/projects/1highfiled/</link>
+      <pubDate>Sat, 05 Nov 2022 19:41:01 +0530</pubDate>
+      
+      <guid>https://xinqiangyan.github.io/projects/1highfiled/</guid>
+      <description></description>
     </item>
     
   </channel>
