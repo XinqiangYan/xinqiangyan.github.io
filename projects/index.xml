@@ -8,11 +8,47 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 05 Nov 2022 19:41:01 +0530</lastBuildDate><atom:link href="https://xinqiangyan.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Low-cost inductively coupled wireless coil for MRI</title>
-      <link>https://xinqiangyan.github.io/projects/lowcost/</link>
+      <title>&#39;RF-transparent DC coil’ to correct imperfection of B0 field in MRI</title>
+      <link>https://xinqiangyan.github.io/projects/4dccoil/</link>
       <pubDate>Sat, 05 Nov 2022 19:41:01 +0530</pubDate>
       
-      <guid>https://xinqiangyan.github.io/projects/lowcost/</guid>
+      <guid>https://xinqiangyan.github.io/projects/4dccoil/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Balun (balanced to unbalanced) circuit for interventional MRI and RF coils</title>
+      <link>https://xinqiangyan.github.io/projects/8balun/</link>
+      <pubDate>Sat, 05 Nov 2022 19:41:01 +0530</pubDate>
+      
+      <guid>https://xinqiangyan.github.io/projects/8balun/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep learning for Parallel Transmission</title>
+      <link>https://xinqiangyan.github.io/projects/2deeplearning/</link>
+      <pubDate>Sat, 05 Nov 2022 19:41:01 +0530</pubDate>
+      
+      <guid>https://xinqiangyan.github.io/projects/2deeplearning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>High-performance RF Coil for VUIIS Small Animal Scanners (4.7 Tesla to 15 Tesla)</title>
+      <link>https://xinqiangyan.github.io/projects/6smallanimal/</link>
+      <pubDate>Sat, 05 Nov 2022 19:41:01 +0530</pubDate>
+      
+      <guid>https://xinqiangyan.github.io/projects/6smallanimal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Low-cost inductively coupled wireless coil for MRI</title>
+      <link>https://xinqiangyan.github.io/projects/7lowcost/</link>
+      <pubDate>Sat, 05 Nov 2022 19:41:01 +0530</pubDate>
+      
+      <guid>https://xinqiangyan.github.io/projects/7lowcost/</guid>
       <description>&lt;p&gt;Low-cost inductively coupled wireless coil for MRI&lt;/p&gt;</description>
     </item>
     
@@ -22,6 +58,24 @@
       <pubDate>Sat, 05 Nov 2022 19:41:01 +0530</pubDate>
       
       <guid>https://xinqiangyan.github.io/projects/1highfiled/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RF device for MR guided focused ultrasound therapy</title>
+      <link>https://xinqiangyan.github.io/projects/3ultrasound/</link>
+      <pubDate>Sat, 05 Nov 2022 19:41:01 +0530</pubDate>
+      
+      <guid>https://xinqiangyan.github.io/projects/3ultrasound/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wearable antenna for MRI</title>
+      <link>https://xinqiangyan.github.io/projects/5wearable/</link>
+      <pubDate>Sat, 05 Nov 2022 19:41:01 +0530</pubDate>
+      
+      <guid>https://xinqiangyan.github.io/projects/5wearable/</guid>
       <description></description>
     </item>
     
