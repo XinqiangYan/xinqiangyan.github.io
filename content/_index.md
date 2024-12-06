@@ -8,8 +8,8 @@ sections:
   - block: hero
     content:
       title: |
-        Yan
-        Lab
+        Wowchemy
+        Research Group
       image:
         filename: welcome.jpg
       text: |
