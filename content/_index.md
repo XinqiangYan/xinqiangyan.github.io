@@ -8,7 +8,7 @@ sections:
   - block: hero
     content:
       title: |
-        Wowchemy
+        Yan
         Research Group
       image:
         filename: lablogo.jpg
