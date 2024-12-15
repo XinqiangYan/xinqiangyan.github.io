@@ -22,7 +22,7 @@ organizations:
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include Physics and MRI.
+bio: My research interests include physics and MRI.
 
 interests:
   - Electromagnetic simulation
@@ -64,5 +64,5 @@ user_groups:
   - Researchers
 ---
 
-Hao Liang is developing electromagnetic and B0 simulation algorithms and deep-learning methods for parallel transmission and B0 shimming.
+Hao Liang is developing electromagnetic and B0 simulation algorithms and deep-learning methods for parallel transmission and B0 shimming. 
 
