@@ -10,7 +10,7 @@ last_name: Yan
 superuser: true
 
 # Role/position
-role: Research Associate Professor of Radiology and Radiological Sciences and Electrical and Computer Engineering
+role: Research Associate Professor of Radiology & Radiological Sciences and Electrical and Computer Engineering
 
 # Organizations/Affiliations
 organizations:
@@ -21,21 +21,18 @@ organizations:
 bio: My research pursuits revolve around advancing engineering solutions to address the technical challenges encountered in the field of MRI.
 
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Antennas
+  - RF coils
+  - Artificial Inteligence
 
 education:
   courses:
-    - course: PhD in Artificial Intelligence
-      institution: Stanford University
-      year: 2012
-    - course: MEng in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
+    - course: PhD in Particle Physics and Nuclear Physics
+      institution: Institute of High Energy Physics, CAS (Beijing, China)
+      year: 2014
+    - course: BSc in Nuclear Physics
+      institution: Lanzhou University (Gansu, China)
       year: 2009
-    - course: BSc in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2008
 
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
@@ -44,16 +41,13 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:test@example.org'
+    link: 'mailto:xinqiang.yan@vumc.org'
   - icon: twitter
     icon_pack: fab
     link: https://twitter.com/GeorgeCushen
   - icon: google-scholar
     icon_pack: ai
-    link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
-  - icon: github
-    icon_pack: fab
-    link: https://github.com/gcushen
+    link: https://scholar.google.com/citations?user=nd0XQKwAAAAJ
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -69,9 +63,11 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Researchers
+  - Principal Investigators
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+My research pursuits revolve around advancing engineering solutions to address the technical challenges encountered in the field of MRI. My primary objectives encompass improving RF and B0 homogeneity in high-field MRI, accelerating acquisition speed, reducing RF heating near implants, and enhancing the Signal-to-Noise Ratio.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+
+Our current research projects include: 1. Solving dark bands in tcMRgFUS using passive reflective antennas;  2. Developing next-generation integrated RF Tx/Rx and B0 shimming coils for 7T brain and spinal cord MRI;  3. Developing flexible RF coils and baluns;  4. Developing RF-transparent B0 shimming coil array;  5. Implementing low-cost wireless coils for clinical scanners;  6. Developing novel materials and devices to reduce RF-related heating near MRI implants.
+
