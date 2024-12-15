@@ -9,10 +9,11 @@ sections:
     content:
       title: Contact
       text: |-
-        I am currently seeking highly motivated individuals to join my research group at Vanderbilt University Medical Center and Vanderbilt University. We have exciting opportunities for Postdoctoral Researchers, PhD students, and undergraduate students interested in part-time research assistant positions. Our team focuses on cutting-edge research in MRI engineering, and we welcome applicants with a strong academic background and a passion for innovation. If you are interested in collaborating with us, please send your CV along with a brief statement of interest.
+        We are currently seeking highly motivated individuals to join my research group at Vanderbilt University Medical Center and Vanderbilt University. We have exciting opportunities for Postdoctoral Researchers, PhD students, and undergraduate students interested in part-time research assistant positions. Our team focuses on cutting-edge research in MRI engineering, and we welcome applicants with a strong academic background and a passion for innovation. If you are interested in collaborating with us, please send your CV along with a brief statement of interest.
       email: xinqiang.yan@vumc.org
+      phone: 6150000000
       address:
-        street:1161 21st AVE S;  MCN 2205
+        street: 1161 21st AVE S
         city: Nashville
         region: TN
         postcode: '37232'
@@ -21,7 +22,7 @@ sections:
       coordinates:
         latitude: '37.4275'
         longitude: '-122.1697'
-      directions: Enter MCN building (main entrance near the roundabout) and go down the hallway. And you will find my office is at your left hand.
+      directions: Enter the MCN building through the main entrance (near the roundabout) and proceed down the hallway. My office, D2205, will be on your left.
       office_hours:
         - 'Monday-Friday 7:00 to 3:00'
       appointment_url: 'https://calendly.com'
