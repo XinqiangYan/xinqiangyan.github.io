@@ -19,7 +19,7 @@ sections:
           position: right
           color: '#666'
       - title: High-performance RF Coil for VUIIS Small Animal Scanners
-        content: 'High-performance RF coils for our small animal scanners ranging from 4.7 Tesla to 15 Tesla. These scanners play a pivotal role in our research studies and optimizing the performance of the animal coils is crucial for enhancing imaging outcomes.'
+        content: 'Small animal scanners ranging from 4.7 Tesla to 15 Tesla play a pivotal role in our research studies and optimizing the performance of the animal coils is crucial for enhancing imaging outcomes.'
         align: left
         background:
           image:
