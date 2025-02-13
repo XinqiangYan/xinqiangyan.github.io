@@ -15,11 +15,11 @@ sections:
           image:
             filename: soldering.jpg
             filters:
-              brightness: 0.6
+              brightness: 0.7
           position: right
           color: '#666'
       - title: High-performance RF Coil for VUIIS Small Animal Scanners
-        content: 'Small animal scanners ranging from 4.7 Tesla to 15 Tesla play a pivotal role in our research studies and optimizing the performance of the animal coils is crucial for enhancing imaging outcomes.'
+        content: 'Optimizing the performance of the animal coils is crucial for enhancing imaging outcomes.'
         align: left
         background:
           image:
