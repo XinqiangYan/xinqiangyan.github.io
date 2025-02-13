@@ -18,7 +18,7 @@ sections:
               brightness: 0.7
           position: right
           color: '#666'
-      - title: High-performance RF Coil for VUIIS Small Animal Scanners
+      - title: High-performance RF Coil for Small Animal Scanners
         content: 'Optimizing the performance of the animal coils is crucial for enhancing imaging outcomes.'
         align: left
         background:
@@ -28,8 +28,8 @@ sections:
               brightness: 0.7
           position: center
           color: '#555'
-      - title: World-Class Semiconductor Lab
-        content: 'Just opened last month!'
+      - title: Low-cost inductively coupled wireless coil for MRI 
+        content: 'Our innovative wireless coil designs, such as the stacked loop for increased power transfer efficiency and the wireless Litzcage with inherent detuning performance, represent advancements in optimizing the functionality and convenience of MRI technology.'
         align: right
         background:
           image:
