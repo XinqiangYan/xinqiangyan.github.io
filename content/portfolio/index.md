@@ -8,12 +8,12 @@ sections:
   - block: slider
     content:
       slides:
-      - title: 👋 Welcome to the Radiofrequency lab at VUIIS
+      - title: 👋 Welcome to the Radiofrequency lab
         content: Take a look at what we're working on...
         align: center
         background:
           image:
-            filename: soldering.jpg
+            filename: coders.jpg
             filters:
               brightness: 0.7
           position: right
