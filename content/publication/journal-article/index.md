@@ -2,8 +2,6 @@
 title: "Self-decoupled radiofrequency coils for magnetic resonance imaging"
 authors:
 - Xinqiang Yan
-- John Gore
-- William Grissom
 author_notes:
 - "Equal contribution"
 - "Equal contribution"
