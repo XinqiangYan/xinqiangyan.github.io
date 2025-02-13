@@ -17,13 +17,14 @@ publishDate: "2018-01-01T00:00:00Z"
 publication_types: ["article-journal"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Journal of Source Themes, 1*(1)"
+publication: "*Nature communications*"
 publication_short: ""
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: Arrays of radiofrequency coils are widely used in magnetic resonance imaging to achieve high signal-to-noise ratios and flexible volume coverage, to accelerate scans using parallel reception, and to mitigate field non-uniformity using parallel transmission. However, conventional coil arrays require complex decoupling technologies to reduce electromagnetic coupling between coil elements, which would otherwise amplify noise and limit transmitted power. Here we report a novel self-decoupled RF coil design with a simple structure that requires only an intentional redistribution of electrical impedances around the length of the coil loop. We show that self-decoupled coils achieve high inter-coil isolation between adjacent and non-adjacent elements of loop arrays and mixed arrays of loops and dipoles. Self-decoupled coils are also robust to coil separation, making them attractive for size-adjustable and flexible coil arrays.
+
 
 # Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+summary: 
 
 tags:
 - Source Themes
@@ -32,8 +33,8 @@ featured: false
 # links:
 # - name: ""
 #   url: ""
-url_pdf: http://arxiv.org/pdf/1512.04133v1
-url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
+url_pdf: 'https://www.nature.com/articles/s41467-018-05585-8.pdf'
+url_code: ''
 url_dataset: ''
 url_poster: ''
 url_project: ''
