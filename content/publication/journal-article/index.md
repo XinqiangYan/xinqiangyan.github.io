@@ -4,7 +4,6 @@ authors:
 - Xinqiang Yan
 author_notes:
 - "Equal contribution"
-- "Equal contribution"
 date: "2018-08-28T00:00:00Z"
 doi: ""
 
@@ -17,14 +16,13 @@ publishDate: "2018-01-01T00:00:00Z"
 publication_types: ["article-journal"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Nature communications*"
+publication: "*Nature communications, 1*(1)"
 publication_short: ""
 
-abstract: Arrays of radiofrequency coils are widely used in magnetic resonance imaging to achieve high signal-to-noise ratios and flexible volume coverage, to accelerate scans using parallel reception, and to mitigate field non-uniformity using parallel transmission. However, conventional coil arrays require complex decoupling technologies to reduce electromagnetic coupling between coil elements, which would otherwise amplify noise and limit transmitted power. Here we report a novel self-decoupled RF coil design with a simple structure that requires only an intentional redistribution of electrical impedances around the length of the coil loop. We show that self-decoupled coils achieve high inter-coil isolation between adjacent and non-adjacent elements of loop arrays and mixed arrays of loops and dipoles. Self-decoupled coils are also robust to coil separation, making them attractive for size-adjustable and flexible coil arrays.
-
+abstract: abstract
 
 # Summary. An optional shortened abstract.
-summary: self-decoupled RF coil design with a simple structure that requires only an intentional redistribution of electrical impedances around the length of the coil loop 
+summary: summary
 
 tags:
 - Source Themes
@@ -34,7 +32,7 @@ featured: false
 # - name: ""
 #   url: ""
 url_pdf: https://www.nature.com/articles/s41467-018-05585-8.pdf
-url_code: ''
+url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
 url_dataset: ''
 url_poster: ''
 url_project: ''
