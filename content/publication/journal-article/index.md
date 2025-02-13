@@ -24,7 +24,7 @@ abstract: Arrays of radiofrequency coils are widely used in magnetic resonance i
 
 
 # Summary. An optional shortened abstract.
-summary: 
+summary: self-decoupled RF coil design with a simple structure that requires only an intentional redistribution of electrical impedances around the length of the coil loop 
 
 tags:
 - Source Themes
@@ -33,7 +33,7 @@ featured: false
 # links:
 # - name: ""
 #   url: ""
-url_pdf: 'https://www.nature.com/articles/s41467-018-05585-8.pdf'
+url_pdf: https://www.nature.com/articles/s41467-018-05585-8.pdf
 url_code: ''
 url_dataset: ''
 url_poster: ''
