@@ -10,7 +10,15 @@
 <meta property="og:url" content="{{ .Permalink }}">
 {{ with partial "image-resource.html" . }}{{ with .Fill "1200x630 webp" }}<meta property="og:image" content="{{ .Permalink }}">{{ end }}{{ end }}
 <meta name="theme-color" content="#0a1628">
-{{ with resources.Get site.Params.logo }}{{ with .Fill "64x64 png" }}<link rel="icon" href="{{ .RelPermalink }}">{{ end }}{{ with .Fill "180x180 png" }}<link rel="apple-touch-icon" href="{{ .RelPermalink }}">{{ end }}{{ end }}
+{{/* Browser-tab icon: params.favicon (a file in assets/, e.g. media/vumc-favicon.png) if present, else the lab logo. */}}
+{{ $fav := or (resources.Get (site.Params.favicon | default "")) (resources.Get site.Params.logo) }}
+{{ with $fav }}
+  {{ if in (slice "image/x-icon" "image/vnd.microsoft.icon" "image/svg+xml") .MediaType.Type }}
+<link rel="icon" href="{{ .RelPermalink }}">
+  {{ else }}
+{{ with .Fill "64x64 png" }}<link rel="icon" type="image/png" href="{{ .RelPermalink }}">{{ end }}{{ with .Fill "180x180 png" }}<link rel="apple-touch-icon" href="{{ .RelPermalink }}">{{ end }}
+  {{ end }}
+{{ end }}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
