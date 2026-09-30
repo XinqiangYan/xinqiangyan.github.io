@@ -1,0 +1,25 @@
+{{ define "main" }}
+{{ partial "page-header.html" . }}
+{{ $pubs := sort site.Data.publications "year" "desc" }}
+<section class="section">
+  <div class="container">
+    {{ with .Content }}<div class="prose prose-intro">{{ . }}</div>{{ end }}
+    <div class="pub-toolbar">
+      <label class="search">
+        {{ partial "icon.html" "search" }}
+        <input type="search" placeholder="Search title, author, journal…" aria-label="Search publications" data-pub-search>
+      </label>
+      <div class="filters" role="toolbar" aria-label="Filter by type" data-filter-group="pubs">
+        <button class="chip is-active" data-filter="all">All <span>{{ len $pubs }}</span></button>
+        {{ $types := slice }}{{ range $pubs }}{{ $types = $types | append .type }}{{ end }}
+        {{ range uniq $types }}{{ $t := . }}<button class="chip" data-filter="{{ $t }}">{{ $t | humanize }} <span>{{ len (where $pubs "type" $t) }}</span></button>{{ end }}
+      </div>
+      <a class="btn btn-outline btn-sm" href="{{ site.Params.google_scholar }}" rel="noopener">{{ partial "icon.html" "scholar" }} Google Scholar</a>
+    </div>
+    <ul class="pub-list" data-pub-list>
+      {{ range $pubs }}{{ partial "pub-item.html" . }}{{ end }}
+    </ul>
+    <p class="empty" hidden data-pub-empty>No publications match your search.</p>
+  </div>
+</section>
+{{ end }}

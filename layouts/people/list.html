@@ -1,0 +1,34 @@
+{{ define "main" }}
+{{ partial "page-header.html" . }}
+<section class="section">
+  <div class="container">
+    {{ with .Content }}<div class="prose prose-intro">{{ . }}</div>{{ end }}
+    {{ range .Params.groups }}
+      {{ $g := . }}
+      {{ $members := where $.Pages "Params.group" $g }}
+      {{ with $members }}
+      <h2 class="group-title">{{ $g }}</h2>
+      <div class="grid grid-4">
+        {{ range .ByWeight }}
+        <a class="person" href="{{ .RelPermalink }}">
+          {{ with partial "image-resource.html" . }}{{ with .Fill "480x480 webp Top" }}<img src="{{ .RelPermalink }}" width="240" height="240" alt="{{ $.Title }}" loading="lazy">{{ end }}{{ end }}
+          <h3>{{ .Title }}</h3>
+          <p class="role">{{ .Params.role }}</p>
+          {{ with .Params.interests }}<p class="small muted">{{ delimit . " · " }}</p>{{ end }}
+        </a>
+        {{ end }}
+      </div>
+      {{ end }}
+    {{ end }}
+  </div>
+</section>
+<section class="section section-tint">
+  <div class="container cta cta-plain">
+    <div>
+      <h2>Join us</h2>
+      <p>We are looking for motivated postdocs, PhD students and undergraduate research assistants interested in MRI engineering at Vanderbilt University Medical Center and Vanderbilt University.</p>
+    </div>
+    <div class="actions"><a class="btn btn-accent" href="{{ "/contact/#join" | relURL }}">Open positions {{ partial "icon.html" "arrow" }}</a></div>
+  </div>
+</section>
+{{ end }}

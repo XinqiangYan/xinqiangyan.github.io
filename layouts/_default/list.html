@@ -1,0 +1,16 @@
+{{ define "main" }}
+{{ partial "page-header.html" . }}
+<section class="section">
+  <div class="container">
+    {{ with .Content }}<div class="prose prose-intro">{{ . }}</div>{{ end }}
+    {{ $pages := .Paginate .Pages.ByDate.Reverse }}
+    <div class="grid grid-3">{{ range $pages.Pages }}{{ partial "news-card.html" . }}{{ end }}</div>
+    {{ if gt $pages.TotalPages 1 }}
+    <nav class="pager">
+      {{ with $pages.Prev }}<a class="btn btn-outline" href="{{ .URL }}">← Newer</a>{{ end }}
+      {{ with $pages.Next }}<a class="btn btn-outline" href="{{ .URL }}">Older →</a>{{ end }}
+    </nav>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

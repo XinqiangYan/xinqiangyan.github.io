@@ -1,0 +1,13 @@
+<article class="card product-card">
+  <a class="card-media{{ if eq .Params.image_fit "contain" }} is-contain{{ end }}" href="{{ .RelPermalink }}" tabindex="-1" aria-hidden="true">
+    {{ with partial "image-resource.html" . }}{{ with cond (eq $.Params.image_fit "contain") (.Fit "800x520 webp") (.Fill "800x520 webp Center") }}<img src="{{ .RelPermalink }}" width="400" height="260" alt="" loading="lazy">{{ end }}{{ else }}{{ partial "coil-art.html" .Params.art }}{{ end }}
+    {{ with .Params.status }}<span class="badge badge-{{ . | urlize }}">{{ . }}</span>{{ end }}
+  </a>
+  <div class="card-body">
+    <p class="eyebrow">{{ .Params.category }}</p>
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <p>{{ .Params.summary }}</p>
+    {{ with .Params.field_strengths }}<ul class="chips">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
+    <a class="link-arrow" href="{{ .RelPermalink }}">Details {{ partial "icon.html" "arrow" }}</a>
+  </div>
+</article>

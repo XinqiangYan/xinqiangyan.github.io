@@ -1,0 +1,28 @@
+{{ define "main" }}
+{{ partial "page-header.html" . }}
+{{ $products := .Pages.ByWeight }}
+<section class="section">
+  <div class="container">
+    {{ with .Content }}<div class="prose prose-intro">{{ . }}</div>{{ end }}
+    {{ $cats := slice }}{{ range $products }}{{ with .Params.category }}{{ $cats = $cats | append . }}{{ end }}{{ end }}
+    {{ $cats = uniq $cats }}
+    {{ if gt (len $cats) 1 }}
+    <div class="filters" role="toolbar" aria-label="Filter products" data-filter-group="products">
+      <button class="chip is-active" data-filter="all">All</button>
+      {{ range $cats }}<button class="chip" data-filter="{{ . | urlize }}">{{ . }}</button>{{ end }}
+    </div>
+    {{ end }}
+    <div class="grid grid-3" data-filter-target="products">
+      {{ range $products }}<div data-cat="{{ .Params.category | urlize }}">{{ partial "product-card.html" . }}</div>{{ end }}
+    </div>
+  </div>
+</section>
+<section class="section section-tint">
+  <div class="container grid grid-3">
+    <div class="feature"><span class="feature-icon">{{ partial "icon.html" "flask" }}</span><h3>Validated in vivo</h3><p>Each design is characterized on the bench and validated with phantom and in-vivo imaging before release.</p></div>
+    <div class="feature"><span class="feature-icon">{{ partial "icon.html" "bolt" }}</span><h3>Configured for your system</h3><p>Tuned and matched for your scanner vendor and field strength, with the connector and interface your site needs.</p></div>
+    <div class="feature"><span class="feature-icon">{{ partial "icon.html" "scholar" }}</span><h3>Support from the designers</h3><p>You work directly with the engineers who designed the coil, from installation to protocol optimization.</p></div>
+  </div>
+</section>
+{{ partial "cta.html" . }}
+{{ end }}

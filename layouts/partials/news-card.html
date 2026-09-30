@@ -1,0 +1,8 @@
+<article class="card news-card">
+  {{ with partial "image-resource.html" . }}<a class="card-media is-contain" href="{{ $.RelPermalink }}" tabindex="-1" aria-hidden="true">{{ with .Fit "800x450 webp" }}<img src="{{ .RelPermalink }}" width="400" height="225" alt="" loading="lazy">{{ end }}</a>{{ end }}
+  <div class="card-body">
+    <time class="eyebrow" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <p>{{ .Summary | plainify | truncate 140 }}</p>
+  </div>
+</article>

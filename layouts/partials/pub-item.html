@@ -1,0 +1,15 @@
+{{ $pi := "Yan X" }}
+{{ $link := .url | default "" }}{{ if and (not $link) .doi }}{{ $link = printf "https://doi.org/%s" .doi }}{{ end }}
+<li class="pub" data-type="{{ .type }}" data-search="{{ lower (printf "%s %s %s %v" .title .authors .venue .year) }}">
+  <div class="pub-year">{{ .year }}</div>
+  <div class="pub-main">
+    <h3 class="pub-title">{{ if $link }}<a href="{{ $link }}" rel="noopener">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}</h3>
+    <p class="pub-authors">{{ replace (.authors | htmlEscape) $pi (printf "<strong>%s</strong>" $pi) | safeHTML }}</p>
+    <p class="pub-venue"><em>{{ .venue }}</em>{{ with .details }}, {{ . }}{{ end }}{{ with .note }} <span class="tag">{{ . }}</span>{{ end }}</p>
+    <div class="pub-links">
+      <span class="tag tag-type">{{ .type | humanize }}</span>
+      {{ with .doi }}<a class="tag" href="https://doi.org/{{ . }}" rel="noopener">DOI</a>{{ end }}
+      {{ with .pdf }}<a class="tag" href="{{ . }}" rel="noopener">PDF</a>{{ end }}
+    </div>
+  </div>
+</li>

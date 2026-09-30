@@ -1,0 +1,67 @@
+{{ define "main" }}
+<section class="page-header page-header-product">
+  <div class="container product-hero">
+    <div>
+      <p class="eyebrow eyebrow-light"><a href="{{ "/products/" | relURL }}">Products</a> · {{ .Params.category }}</p>
+      <h1>{{ .Title }}</h1>
+      <p class="lead">{{ .Params.summary }}</p>
+      <div class="product-meta">
+        {{ with .Params.status }}<span class="badge badge-{{ . | urlize }}">{{ . }}</span>{{ end }}
+        {{ with .Params.field_strengths }}<ul class="chips chips-light">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
+      </div>
+      <div class="actions">
+        <a class="btn btn-accent" href="{{ "/contact/" | relURL }}?product={{ .Title | urlquery }}#quote">Request a quote {{ partial "icon.html" "arrow" }}</a>
+        {{ with .Params.datasheet }}<a class="btn btn-ghost" href="{{ . | relURL }}">{{ partial "icon.html" "doc" }} Datasheet</a>{{ end }}
+      </div>
+    </div>
+    <figure class="product-figure">
+      {{ with partial "image-resource.html" . }}{{ with .Resize "1000x webp" }}<img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $.Title }}">{{ end }}{{ else }}{{ partial "coil-art.html" .Params.art }}{{ end }}
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container product-body">
+    <div>
+      {{ with .Params.highlights }}
+      <h2 class="h3">Key features</h2>
+      <ul class="checklist">{{ range . }}<li>{{ partial "icon.html" "check" }}<span>{{ . | markdownify }}</span></li>{{ end }}</ul>
+      {{ end }}
+      <div class="prose">{{ .Content }}</div>
+    </div>
+    <aside class="spec-card">
+      <h2 class="h3">Specifications</h2>
+      {{ with .Params.specs }}
+      <dl class="specs">{{ range . }}<div><dt>{{ .label }}</dt><dd>{{ .value | markdownify }}</dd></div>{{ end }}</dl>
+      {{ end }}
+      {{ with .Params.applications }}
+      <h3 class="h4">Applications</h3>
+      <ul class="chips">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
+      {{ end }}
+      <p class="small muted">Specifications may vary by configuration. Contact us for the latest datasheet and regulatory status.</p>
+    </aside>
+  </div>
+</section>
+
+{{ with .Params.publications }}
+<section class="section section-tint">
+  <div class="container">
+    <h2 class="h3">The science behind it</h2>
+    <ul class="pub-list">
+      {{ range . }}{{ $t := . }}{{ range where site.Data.publications "title" $t }}{{ partial "pub-item.html" . }}{{ end }}{{ end }}
+    </ul>
+  </div>
+</section>
+{{ end }}
+
+{{ $related := first 3 (where (where site.RegularPages "Section" "products") "Permalink" "ne" .Permalink).ByWeight }}
+{{ with $related }}
+<section class="section">
+  <div class="container">
+    <div class="section-head section-head-row"><h2>Other products</h2><a class="link-arrow" href="{{ "/products/" | relURL }}">All products {{ partial "icon.html" "arrow" }}</a></div>
+    <div class="grid grid-3">{{ range . }}{{ partial "product-card.html" . }}{{ end }}</div>
+  </div>
+</section>
+{{ end }}
+{{ partial "cta.html" . }}
+{{ end }}

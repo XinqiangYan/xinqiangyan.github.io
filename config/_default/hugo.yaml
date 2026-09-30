@@ -1,63 +1,66 @@
-# Configuration of Hugo
-# Guide: https://docs.hugoblox.com/tutorial/
-# Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
-
-title: Yan Lab # Website name
-baseURL: 'https://example.com/' # Website URL
-
-############################
-## LANGUAGE
-############################
-
+# Site configuration — see README.md for how to edit content.
+title: Yan Lab
+baseURL: 'https://xinqiangyan.github.io/'
+languageCode: en-us
 defaultContentLanguage: en
-hasCJKLanguage: false
-defaultContentLanguageInSubdir: false
-removePathAccents: true
 
-############################
-## ADVANCED
-############################
-
-enableGitInfo: false
-summaryLength: 30
-pagination:
-  pagerSize: 10
-enableEmoji: true
 enableRobotsTXT: true
-footnotereturnlinkcontents: <sup>^</sup>
-ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
-permalinks:
-  authors: '/author/:slug/'
-  tags: '/tag/:slug/'
-  categories: '/category/:slug/'
-  publication_types: '/publication-type/:slug/'
-disableAliases: true
+enableEmoji: true
+summaryLength: 30
+disableKinds: [taxonomy, term]
+
+pagination:
+  pagerSize: 12
+
 outputs:
-  home: [HTML, RSS, JSON, WebAppManifest, headers, redirects]
-  section: [HTML, RSS]
+  home: [HTML, RSS]
+  section: [HTML]
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 imaging:
   resampleFilter: lanczos
-  quality: 75
+  quality: 82
   anchor: smart
-timeout: 600000
-taxonomies:
-  tag: tags
-  category: categories
-  publication_type: publication_types
-  author: authors
-markup:
-  _merge: deep
-related:
-  threshold: 80
-  includeNewer: true
-  toLower: true
-  indices:
-    - name: tags
-      weight: 100
-    - name: categories
-      weight: 70
-security:
-  _merge: deep
-sitemap:
-  _merge: deep
+
+params:
+  description: >-
+    Yan Lab at Vanderbilt University Medical Center develops and commercializes
+    advanced MRI RF coils, B0 shimming hardware and MRI-guided therapy technology.
+  tagline: MRI RF engineering · from the bench to the scanner
+  org: Vanderbilt University Medical Center · VUIIS
+  email: xinqiang.yan@vumc.org
+  # Address inquiries to this mailbox for product quotes (change if you set up a sales address).
+  sales_email: xinqiang.yan@vumc.org
+  address:
+    - Vanderbilt University Institute of Imaging Science (VUIIS)
+    - 1161 21st Ave S, MCN D2205
+    - Nashville, TN 37232, USA
+  google_scholar: https://scholar.google.com/citations?user=nd0XQKwAAAAJ
+  logo: media/lablogo.jpg
+  hero_image: media/soldering.jpg
+  team_image: media/coders.jpg
+
+menus:
+  main:
+    - name: Research
+      url: /research/
+      weight: 10
+    - name: Products
+      url: /products/
+      weight: 20
+    - name: Publications
+      url: /publications/
+      weight: 30
+    - name: People
+      url: /people/
+      weight: 40
+    - name: News
+      url: /news/
+      weight: 50
+    - name: Contact
+      url: /contact/
+      weight: 60

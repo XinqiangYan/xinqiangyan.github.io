@@ -1,0 +1,5 @@
+{{/* Returns the page's image resource: front-matter `image` (path under assets/), else a bundled featured.* / avatar.*, else nil. */}}
+{{ $img := "" }}
+{{ with .Params.image }}{{ $img = resources.Get . }}{{ end }}
+{{ if not $img }}{{ $img = .Resources.GetMatch "{featured,avatar}.{jpg,jpeg,png,webp}" }}{{ end }}
+{{ return $img }}

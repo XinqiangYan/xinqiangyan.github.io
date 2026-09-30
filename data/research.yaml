@@ -1,0 +1,20 @@
+# Research areas shown on the home page and the Research page.
+# icon: one of the names in layouts/partials/icon.html
+- title: RF coils & arrays
+  icon: coil
+  text: Self-decoupled, flexible and wireless RF coils that raise SNR and simplify array design for clinical and preclinical MRI.
+- title: B0 shimming hardware
+  icon: magnet
+  text: RF-transparent B0 shim coil arrays and integrated RF/shim coils that correct field inhomogeneity where it matters most.
+- title: RF & B1 homogeneity
+  icon: wave
+  text: Passive and parallel-transmit solutions for dark bands and B1 non-uniformity at 3T and 7T.
+- title: Implant safety
+  icon: shield
+  text: Novel materials and devices that reduce RF heating near implants, expanding safe access to MRI.
+- title: MRI-guided therapy
+  icon: target
+  text: Hardware for MR-guided focused ultrasound (tcMRgFUS), including passive antennas that remove dark-band artifacts.
+- title: Portable & low-cost MRI
+  icon: portable
+  text: Low-cost wireless coils and portable MRI hardware that bring imaging to more patients and sites.

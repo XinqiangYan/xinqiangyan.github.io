@@ -1,0 +1,17 @@
+<header class="site-header" data-header>
+  <div class="container nav">
+    <a class="brand" href="{{ "/" | relURL }}">
+      {{ with resources.Get site.Params.logo }}{{ with .Fill "96x96 webp" }}<img src="{{ .RelPermalink }}" width="40" height="40" alt="">{{ end }}{{ end }}
+      <span><strong>{{ site.Title }}</strong><small>MRI RF Engineering</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" data-nav-toggle>{{ partial "icon.html" "menu" }}</button>
+    <nav class="nav-links" data-nav>
+      {{ $cur := . }}
+      {{ range site.Menus.main }}
+        {{ $active := or ($cur.IsMenuCurrent "main" .) (and $cur.Section (eq (printf "/%s/" $cur.Section) .URL)) }}
+        <a href="{{ .URL | relURL }}"{{ if $active }} aria-current="page"{{ end }}>{{ .Name }}</a>
+      {{ end }}
+      <a class="btn btn-sm btn-accent" href="{{ "/contact/#quote" | relURL }}">Request a quote</a>
+    </nav>
+  </div>
+</header>

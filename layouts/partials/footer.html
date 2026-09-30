@@ -1,0 +1,29 @@
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand brand-light" href="{{ "/" | relURL }}">
+        {{ with resources.Get site.Params.logo }}{{ with .Fill "96x96 webp" }}<img src="{{ .RelPermalink }}" width="40" height="40" alt="">{{ end }}{{ end }}
+        <span><strong>{{ site.Title }}</strong><small>MRI RF Engineering</small></span>
+      </a>
+      <p class="muted">{{ site.Params.description }}</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>{{ range site.Menus.main }}<li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>{{ end }}</ul>
+    </div>
+    <div>
+      <h4>Products</h4>
+      <ul>{{ range first 5 (where site.RegularPages "Section" "products").ByWeight }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}</ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <address>{{ range site.Params.address }}{{ . }}<br>{{ end }}</address>
+      <p><a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a></p>
+      <p><a href="{{ site.Params.google_scholar }}" rel="noopener">Google Scholar ↗</a></p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© {{ now.Year }} {{ site.Title }} · {{ site.Params.org }}</span>
+    <span>Products are for research use unless otherwise stated.</span>
+  </div>
+</footer>

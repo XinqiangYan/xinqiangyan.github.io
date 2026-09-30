@@ -1,0 +1,22 @@
+{{ define "main" }}
+{{ partial "page-header.html" . }}
+<section class="section">
+  <div class="container">
+    <div class="grid grid-3">
+      {{ range site.Data.research }}
+      <div class="feature">
+        <span class="feature-icon">{{ partial "icon.html" .icon }}</span>
+        <h3>{{ .title }}</h3>
+        <p>{{ .text }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+<section class="section section-tint">
+  <div class="container narrow">
+    <div class="prose">{{ .Content }}</div>
+  </div>
+</section>
+{{ partial "cta.html" . }}
+{{ end }}

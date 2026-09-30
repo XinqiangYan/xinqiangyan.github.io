@@ -1,0 +1,29 @@
+{{ define "main" }}
+<section class="page-header">
+  <div class="container profile">
+    {{ with partial "image-resource.html" . }}{{ with .Fill "440x440 webp Top" }}<img class="avatar" src="{{ .RelPermalink }}" width="220" height="220" alt="{{ $.Title }}">{{ end }}{{ end }}
+    <div>
+      <p class="eyebrow eyebrow-light"><a href="{{ "/people/" | relURL }}">People</a> · {{ .Params.group }}</p>
+      <h1>{{ .Title }}</h1>
+      <p class="lead">{{ .Params.role }}</p>
+      {{ with .Params.organization }}<p class="muted-light">{{ . }}</p>{{ end }}
+      <div class="actions">
+        {{ with .Params.email }}<a class="btn btn-ghost btn-sm" href="mailto:{{ . }}">{{ partial "icon.html" "mail" }} Email</a>{{ end }}
+        {{ with .Params.scholar }}<a class="btn btn-ghost btn-sm" href="{{ . }}" rel="noopener">{{ partial "icon.html" "scholar" }} Google Scholar</a>{{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container product-body">
+    <div class="prose">{{ .Content }}</div>
+    <aside class="spec-card">
+      {{ with .Params.interests }}<h2 class="h4">Interests</h2><ul class="chips">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
+      {{ with .Params.education }}
+      <h2 class="h4">Education</h2>
+      <ul class="edu">{{ range . }}<li><strong>{{ .degree }}</strong>, {{ .year }}<br><span class="muted">{{ .institution }}</span></li>{{ end }}</ul>
+      {{ end }}
+    </aside>
+  </div>
+</section>
+{{ end }}

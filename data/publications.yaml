@@ -1,0 +1,54 @@
+# Publications list — rendered on /publications/ (newest first, grouped by year).
+#
+# Fields:
+#   title    (required)
+#   authors  (required) "Yan X" is automatically bolded
+#   venue    (required) journal / conference / patent office
+#   year     (required)
+#   type     journal | conference | patent | preprint | book
+#   details  optional volume/issue/pages, e.g. "9:3481"
+#   doi      optional, e.g. 10.1038/s41467-018-05585-8
+#   url      optional link (used when there is no DOI)
+#   pdf      optional link to a PDF
+#   featured true to also show on the home page
+#   note     optional badge text, e.g. "Featured article"
+#
+# NOTE: this is a starter list. Please check every entry against Google Scholar
+# and add the rest of the lab's papers, patents and abstracts.
+
+- title: "On the equivalence of demagnetization tensors as discrete cell size approaches zero in three-dimensional space"
+  authors: "Liang H, Yan X"
+  venue: "Journal of Applied Physics"
+  year: 2024
+  type: journal
+  featured: true
+  note: "Featured article"
+
+- title: "Self-decoupled radiofrequency coils for magnetic resonance imaging"
+  authors: "Yan X, Gore JC, Grissom WA"
+  venue: "Nature Communications"
+  details: "9:3481"
+  year: 2018
+  type: journal
+  doi: 10.1038/s41467-018-05585-8
+  pdf: https://www.nature.com/articles/s41467-018-05585-8.pdf
+  featured: true
+
+- title: "New resonator geometries for ICE decoupling of loop arrays"
+  authors: "Yan X, Gore JC, Grissom WA"
+  venue: "Journal of Magnetic Resonance"
+  year: 2017
+  type: journal
+  featured: true
+
+- title: "Multichannel double-row transmission line array for human MR imaging at ultrahigh fields"
+  authors: "Yan X, Pedersen JO, Wei L, Zhang X, Xue R"
+  venue: "IEEE Transactions on Biomedical Engineering"
+  year: 2015
+  type: journal
+
+- title: "A monopole/loop dual-tuned RF coil for ultrahigh field MRI"
+  authors: "Yan X, Xue R, Zhang X"
+  venue: "Quantitative Imaging in Medicine and Surgery"
+  year: 2014
+  type: journal

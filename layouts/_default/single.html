@@ -1,0 +1,15 @@
+{{ define "main" }}
+<section class="page-header page-header-article">
+  <div class="container narrow">
+    {{ if eq .Section "news" }}<p class="eyebrow eyebrow-light"><a href="{{ "/news/" | relURL }}">News</a> · <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time></p>{{ end }}
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.subtitle }}<p class="lead">{{ . | markdownify }}</p>{{ end }}
+  </div>
+</section>
+<section class="section">
+  <div class="container narrow">
+    {{ with partial "image-resource.html" . }}{{ with .Resize "1400x webp" }}<figure class="article-figure"><img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $.Params.image_alt | default $.Title }}"></figure>{{ end }}{{ end }}
+    <div class="prose">{{ .Content }}</div>
+  </div>
+</section>
+{{ end }}

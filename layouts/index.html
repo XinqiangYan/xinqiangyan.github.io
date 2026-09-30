@@ -1,0 +1,118 @@
+{{ define "bodyclass" }}home{{ end }}
+{{ define "main" }}
+{{ $products := (where site.RegularPages "Section" "products").ByWeight }}
+{{ $pubs := sort site.Data.publications "year" "desc" }}
+
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <svg viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice">
+      <g fill="none" stroke="#38d6c6" stroke-width="1.2">
+        {{ range seq 1 14 }}<ellipse class="field" cx="880" cy="350" rx="{{ mul . 46 }}" ry="{{ mul . 22 }}" style="--i:{{ . }}" opacity="{{ div 1.0 (add . 1) }}"/>{{ end }}
+      </g>
+    </svg>
+  </div>
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow eyebrow-light">{{ site.Params.org }}</p>
+      <h1>RF coils and MRI hardware, <span class="grad">from lab to scanner.</span></h1>
+      <p class="lead">Yan Lab invents and engineers MRI hardware (self-decoupled coils, RF-transparent shim arrays and wireless receive coils) and is now making it available to imaging centers, researchers and industry partners.</p>
+      <div class="actions">
+        <a class="btn btn-accent" href="{{ "/products/" | relURL }}">Explore products {{ partial "icon.html" "arrow" }}</a>
+        <a class="btn btn-ghost" href="{{ "/research/" | relURL }}">Our research</a>
+      </div>
+      <dl class="stats">
+        <div><dt>NIH</dt><dd>funded research programs</dd></div>
+        <div><dt>1.5T–7T</dt><dd>clinical &amp; ultra-high field</dd></div>
+        <div><dt>{{ len $products }}</dt><dd>coil &amp; hardware product lines</dd></div>
+      </dl>
+    </div>
+    <figure class="hero-figure">
+      {{ with resources.Get site.Params.hero_image }}{{ with .Fill "900x900 webp Center" }}<img src="{{ .RelPermalink }}" width="450" height="450" alt="Lab member tuning a flexible multi-channel receive array on the bench">{{ end }}{{ end }}
+      <figcaption><span class="dot"></span>Bench testing a flexible multi-channel receive array</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">What we work on</p>
+      <h2>Engineering solutions for MRI's hardest technical problems</h2>
+      <p class="muted">Better RF and B0 homogeneity, less RF heating near implants, fewer motion artifacts, faster acquisition and higher SNR.</p>
+    </div>
+    <div class="grid grid-3">
+      {{ range site.Data.research }}
+      <div class="feature">
+        <span class="feature-icon">{{ partial "icon.html" .icon }}</span>
+        <h3>{{ .title }}</h3>
+        <p>{{ .text }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ with $products }}
+{{ $featured := where . "Params.featured" true }}
+{{ if not $featured }}{{ $featured = . }}{{ end }}
+<section class="section section-tint">
+  <div class="container">
+    <div class="section-head section-head-row">
+      <div>
+        <p class="eyebrow">Products</p>
+        <h2>Research-proven coils, ready for your scanner</h2>
+      </div>
+      <a class="link-arrow" href="{{ "/products/" | relURL }}">View all products {{ partial "icon.html" "arrow" }}</a>
+    </div>
+    <div class="grid grid-3">
+      {{ range first 3 $featured }}{{ partial "product-card.html" . }}{{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<section class="section">
+  <div class="container split">
+    <div>
+      <p class="eyebrow">From invention to product</p>
+      <h2>Technology built on published, peer-reviewed science</h2>
+      <p class="muted">Every product starts as a published innovation from our lab. It is then refined through bench testing, phantom and in-vivo imaging, and validated with collaborators before release.</p>
+      <ol class="steps">
+        <li><strong>Invent</strong><span>New coil concepts, from self-decoupling to RF-transparent shimming</span></li>
+        <li><strong>Validate</strong><span>EM simulation, bench, phantom and in-vivo testing at 3T and 7T</span></li>
+        <li><strong>Deliver</strong><span>Engineered, documented hardware with support from the people who designed it</span></li>
+      </ol>
+    </div>
+    <div class="pub-panel">
+      <h3>Selected publications</h3>
+      <ul class="pub-list pub-list-compact">
+        {{ range first 4 (where $pubs "featured" true) }}{{ partial "pub-item.html" . }}{{ end }}
+      </ul>
+      <a class="link-arrow" href="{{ "/publications/" | relURL }}">All publications {{ partial "icon.html" "arrow" }}</a>
+    </div>
+  </div>
+</section>
+
+{{ with first 3 (where site.RegularPages "Section" "news").ByDate.Reverse }}
+<section class="section section-tint">
+  <div class="container">
+    <div class="section-head section-head-row">
+      <div><p class="eyebrow">News</p><h2>Latest from the lab</h2></div>
+      <a class="link-arrow" href="{{ "/news/" | relURL }}">All news {{ partial "icon.html" "arrow" }}</a>
+    </div>
+    <div class="grid grid-3">{{ range . }}{{ partial "news-card.html" . }}{{ end }}</div>
+  </div>
+</section>
+{{ end }}
+
+<section class="team-band">
+  {{ with resources.Get site.Params.team_image }}{{ with .Resize "1920x webp" }}<img src="{{ .RelPermalink }}" alt="Yan Lab team photo" loading="lazy">{{ end }}{{ end }}
+  <div class="container team-band-copy">
+    <p class="eyebrow eyebrow-light">The team</p>
+    <h2>Physicists and engineers building better MRI</h2>
+    <a class="btn btn-light" href="{{ "/people/" | relURL }}">Meet the team {{ partial "icon.html" "arrow" }}</a>
+  </div>
+</section>
+
+{{ partial "cta.html" . }}
+{{ end }}

@@ -1,0 +1,46 @@
+{{ define "main" }}
+{{ partial "page-header.html" . }}
+<section class="section">
+  <div class="container contact-grid">
+    <div class="contact-card" id="quote">
+      <span class="feature-icon">{{ partial "icon.html" "coil" }}</span>
+      <h2 class="h3">Product inquiries &amp; quotes</h2>
+      <p>To help us recommend the right configuration, please include:</p>
+      <ul class="checklist checklist-sm">
+        <li>{{ partial "icon.html" "check" }}<span>Product of interest</span></li>
+        <li>{{ partial "icon.html" "check" }}<span>Scanner vendor, model and field strength</span></li>
+        <li>{{ partial "icon.html" "check" }}<span>Anatomy / species and application</span></li>
+        <li>{{ partial "icon.html" "check" }}<span>Quantity and timeline</span></li>
+      </ul>
+      <a class="btn btn-accent" data-quote-link href="mailto:{{ site.Params.sales_email }}?subject=Product%20inquiry&body=Product%3A%0AScanner%20%28vendor%20%2F%20model%20%2F%20field%20strength%29%3A%0AAnatomy%20%2F%20application%3A%0AQuantity%20%26%20timeline%3A%0AInstitution%3A%0A">{{ partial "icon.html" "mail" }} Email a quote request</a>
+    </div>
+    <div class="contact-card" id="collaborate">
+      <span class="feature-icon">{{ partial "icon.html" "flask" }}</span>
+      <h2 class="h3">Research collaborations</h2>
+      <p>We partner with imaging centers, clinicians and industry on custom coils, B0 shimming, MRI safety and MR-guided therapy hardware.</p>
+      <a class="btn btn-outline" href="mailto:{{ site.Params.email }}?subject=Collaboration">{{ partial "icon.html" "mail" }} Get in touch</a>
+    </div>
+    <div class="contact-card" id="join">
+      <span class="feature-icon">{{ partial "icon.html" "scholar" }}</span>
+      <h2 class="h3">Join the lab</h2>
+      <p>{{ .Params.join_text }}</p>
+      <a class="btn btn-outline" href="mailto:{{ site.Params.email }}?subject=Application">{{ partial "icon.html" "mail" }} Send your CV</a>
+    </div>
+  </div>
+</section>
+<section class="section section-tint">
+  <div class="container split">
+    <div>
+      <h2 class="h3">Visit us</h2>
+      <address class="address">{{ partial "icon.html" "pin" }}<span>{{ range site.Params.address }}{{ . }}<br>{{ end }}</span></address>
+      <p class="muted">{{ .Params.directions }}</p>
+      <p><a class="link-arrow" href="https://www.google.com/maps/search/?api=1&query={{ delimit site.Params.address ", " | urlquery }}" rel="noopener">Open in Google Maps {{ partial "icon.html" "arrow" }}</a></p>
+    </div>
+    <div>
+      <h2 class="h3">Email</h2>
+      <p><a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a></p>
+      <div class="prose">{{ .Content }}</div>
+    </div>
+  </div>
+</section>
+{{ end }}
