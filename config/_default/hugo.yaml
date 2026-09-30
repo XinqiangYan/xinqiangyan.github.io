@@ -41,8 +41,9 @@ params:
     - Nashville, TN 37232, USA
   google_scholar: https://scholar.google.com/citations?user=nd0XQKwAAAAJ
   logo: media/lablogo.jpg
-  # Browser-tab icon. Put the file in assets/media/ (PNG, SVG or ICO). Falls back to the logo if missing.
-  favicon: media/vumc-favicon.png
+  # Browser-tab icon (antenna). PNG is used for Safari/iOS; SVG for modern browsers. Falls back to the logo if missing.
+  favicon: media/favicon.png
+  favicon_svg: media/favicon.svg
   hero_image: media/soldering.jpg
   team_image: media/coders.jpg
 
