@@ -75,6 +75,14 @@
   type: "journal"
   doi: "10.1002/mrm.70485"
 
+- title: "Wireless Resonators With Coupled Versus Decoupled Units: Which Enhances Local SNR of RF Receive Arrays Better?"
+  authors: "Lu M, Zhu H, Wang R, Yan X"
+  venue: "Magnetic Resonance in Medicine"
+  details: "95(4):2442-2450"
+  year: 2026
+  type: "journal"
+  url: "https://scholar.google.com/scholar?q=Wireless+Resonators+With+Coupled+Versus+Decoupled+Units%3A+Which+Enhances+Local+SNR+of+RF+Receive+Arrays+Better%3F"
+
 - title: "Detunable wireless ladder resonator inserts for enhanced SNR of local array coil at 1.5 T MRI"
   authors: "Lu M, Wang R, Chen Y, Li R, Yang X, Liang H, Zhu H, Yan X"
   venue: "Medical Physics"
@@ -122,6 +130,14 @@
   year: 2025
   type: "journal"
   doi: "10.1002/nbm.5292"
+
+- title: "Improving intracranial arteriosclerosis stenosis MRI using wireless resonator array inserts"
+  authors: "Zhang Q, Zhu H, Wang K, Wang R, Lu M, Hao X, He J, Wang Z, Yan X, et al."
+  venue: "Magnetic Resonance Imaging"
+  details: "110497"
+  year: 2025
+  type: "journal"
+  url: "https://scholar.google.com/scholar?q=Improving+intracranial+arteriosclerosis+stenosis+MRI+using+wireless+resonator+array+inserts"
 
 - title: "Magnetic field probe-based co-simulation method for irregular volume-type inductively coupled wireless MRI radiofrequency coils"
   authors: "Lu M, Liang H, Zhu H, Yan X"
@@ -520,6 +536,14 @@
   type: "journal"
   url: "https://scholar.google.com/scholar?q=Theoretical+analysis+of+magnetic+wall+decoupling+method+for+radiative+antenna+arrays+in+ultrahigh+magnetic+field+MRI"
 
+- title: "7T transmit/receive arrays using ICE decoupling for human head MR imaging"
+  authors: "Yan X, Zhang X, Feng B, Ma CX, Wei L, Xue R"
+  venue: "IEEE Transactions on Medical Imaging"
+  details: "33(9):1781-1787"
+  year: 2014
+  type: "journal"
+  url: "https://scholar.google.com/scholar?q=7T+transmit%2Freceive+arrays+using+ICE+decoupling+for+human+head+MR+imaging"
+
 - title: "A monopole/loop dual-tuned RF coil for ultrahigh field MRI"
   authors: "Yan X, Xue R, Zhang X"
   venue: "Quantitative Imaging in Medicine and Surgery"
@@ -527,6 +551,14 @@
   year: 2014
   type: "journal"
   url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4137181/"
+
+- title: "Magnetic wall decoupling method for monopole coil array in ultrahigh field MRI: a feasibility test"
+  authors: "Yan X, Zhang X, Wei L, Xue R"
+  venue: "Quantitative Imaging in Medicine and Surgery"
+  details: "4(2):79"
+  year: 2014
+  type: "journal"
+  url: "https://scholar.google.com/scholar?q=Magnetic+wall+decoupling+method+for+monopole+coil+array+in+ultrahigh+field+MRI%3A+a+feasibility+test"
 
 - title: "Optimization of an 8-channel loop-array coil for a 7 T MRI system with the guidance of a co-simulation approach"
   authors: "Yan X, Ma CX, Shi L, Zhuo Y, Zhou XJ, Wei L, Xue R"
