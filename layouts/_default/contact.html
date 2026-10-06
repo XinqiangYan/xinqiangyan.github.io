@@ -2,17 +2,16 @@
 {{ partial "page-header.html" . }}
 <section class="section">
   <div class="container contact-grid">
-    <div class="contact-card" id="quote">
+    <div class="contact-card" id="inquire">
       <span class="feature-icon">{{ partial "icon.html" "coil" }}</span>
-      <h2 class="h3">Product inquiries &amp; quotes</h2>
-      <p>To help us recommend the right configuration, please include:</p>
+      <h2 class="h3">Product inquiries</h2>
+      <p>Interested in one of our coils? It helps if you tell us:</p>
       <ul class="checklist checklist-sm">
         <li>{{ partial "icon.html" "check" }}<span>Product of interest</span></li>
         <li>{{ partial "icon.html" "check" }}<span>Scanner vendor, model and field strength</span></li>
         <li>{{ partial "icon.html" "check" }}<span>Anatomy / species and application</span></li>
-        <li>{{ partial "icon.html" "check" }}<span>Quantity and timeline</span></li>
       </ul>
-      <a class="btn btn-accent" data-quote-link href="mailto:{{ site.Params.sales_email }}?subject=Product%20inquiry&body=Product%3A%0AScanner%20%28vendor%20%2F%20model%20%2F%20field%20strength%29%3A%0AAnatomy%20%2F%20application%3A%0AQuantity%20%26%20timeline%3A%0AInstitution%3A%0A">{{ partial "icon.html" "mail" }} Email a quote request</a>
+      <a class="btn btn-accent" data-inquiry-link href="mailto:{{ site.Params.sales_email }}?subject=Product%20inquiry&body=Product%3A%0AScanner%20%28vendor%20%2F%20model%20%2F%20field%20strength%29%3A%0AAnatomy%20%2F%20application%3A%0AInstitution%3A%0A">{{ partial "icon.html" "mail" }} Ask about a product</a>
     </div>
     <div class="contact-card" id="collaborate">
       <span class="feature-icon">{{ partial "icon.html" "flask" }}</span>

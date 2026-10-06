@@ -52,12 +52,12 @@
     });
   }
 
-  // Prefill quote email with the product name (from ?product=...)
-  var quote = document.querySelector('[data-quote-link]');
+  // Prefill the inquiry email with the product name (from ?product=...)
+  var inquiry = document.querySelector('[data-inquiry-link]');
   var product = new URLSearchParams(location.search).get('product');
-  if (quote && product) {
-    quote.href = quote.href
-      .replace('subject=Product%20inquiry', 'subject=' + encodeURIComponent('Quote request: ' + product))
+  if (inquiry && product) {
+    inquiry.href = inquiry.href
+      .replace('subject=Product%20inquiry', 'subject=' + encodeURIComponent('Inquiry: ' + product))
       .replace('Product%3A', 'Product%3A%20' + encodeURIComponent(product));
   }
 

@@ -33,7 +33,7 @@ params:
   tagline: MRI RF engineering · from the bench to the scanner
   org: Vanderbilt University Medical Center · VUIIS
   email: xinqiang.yan@vumc.org
-  # Address inquiries to this mailbox for product quotes (change if you set up a sales address).
+  # Address inquiries to this mailbox for product inquiries (change if you set up a sales address).
   sales_email: xinqiang.yan@vumc.org
   address:
     - Vanderbilt University Institute of Imaging Science (VUIIS)

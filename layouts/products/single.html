@@ -10,7 +10,7 @@
         {{ with .Params.field_strengths }}<ul class="chips chips-light">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
       </div>
       <div class="actions">
-        <a class="btn btn-accent" href="{{ "/contact/" | relURL }}?product={{ .Title | urlquery }}#quote">Request a quote {{ partial "icon.html" "arrow" }}</a>
+        <a class="btn btn-accent" href="{{ "/contact/" | relURL }}?product={{ .Title | urlquery }}#inquire">Ask about this product {{ partial "icon.html" "arrow" }}</a>
         {{ with .Params.datasheet }}<a class="btn btn-ghost" href="{{ . | relURL }}">{{ partial "icon.html" "doc" }} Datasheet</a>{{ end }}
       </div>
     </div>

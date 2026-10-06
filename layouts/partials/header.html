@@ -11,7 +11,7 @@
         {{ $active := or ($cur.IsMenuCurrent "main" .) (and $cur.Section (eq (printf "/%s/" $cur.Section) .URL)) }}
         <a href="{{ .URL | relURL }}"{{ if $active }} aria-current="page"{{ end }}>{{ .Name }}</a>
       {{ end }}
-      <a class="btn btn-sm btn-accent" href="{{ "/contact/#quote" | relURL }}">Request a quote</a>
+      <a class="btn btn-sm btn-accent" href="{{ "/contact/" | relURL }}">Get in touch</a>
     </nav>
   </div>
 </header>
