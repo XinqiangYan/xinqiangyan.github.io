@@ -176,6 +176,10 @@ a.tag:hover { border-color: var(--accent); color: var(--accent-ink); text-decora
 .search:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
 .search input { border: 0; outline: 0; font: inherit; padding: 10px 0; width: 100%; background: transparent; color: var(--text); }
 .empty { color: var(--muted); padding: 32px 0; text-align: center; }
+.pub-count { margin: 4px 0 0; }
+.pub-pager { flex-wrap: wrap; align-items: center; gap: 6px; }
+.pub-pager .chip { min-width: 42px; }
+.pub-pager .chip:disabled { opacity: .4; cursor: default; }
 
 /* Team band */
 .team-band { position: relative; min-height: 560px; display: flex; align-items: end; color: #fff; overflow: hidden; }

@@ -16,10 +16,12 @@
       </div>
       <a class="btn btn-outline btn-sm" href="{{ site.Params.google_scholar }}" rel="noopener">{{ partial "icon.html" "scholar" }} Google Scholar</a>
     </div>
-    <ul class="pub-list" data-pub-list>
+    <p class="pub-count muted small" data-pub-count aria-live="polite"></p>
+    <ul class="pub-list" data-pub-list data-per-page="{{ site.Params.publications_per_page | default 20 }}">
       {{ range $pubs }}{{ partial "pub-item.html" . }}{{ end }}
     </ul>
     <p class="empty" hidden data-pub-empty>No publications match your search.</p>
+    <nav class="pager pub-pager" aria-label="Publication pages" data-pub-pager></nav>
   </div>
 </section>
 {{ end }}

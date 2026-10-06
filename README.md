@@ -54,7 +54,21 @@ datasheet: /files/my-coil.pdf  # optional, put the PDF in static/files/
 Longer description in Markdown.
 ```
 
-### Add a publication
+### Import publications from Google Scholar
+
+1. On your Google Scholar profile, tick the checkbox at the top of the list to select all articles (click **Show more** first until every paper is loaded).
+2. Click **Export → BibTeX** and save the file, e.g. as `citations.bib`.
+3. Run:
+
+```bash
+python3 scripts/bib2yaml.py citations.bib --only journal   # journal articles only
+# or, to import everything (conference abstracts, patents, ...):
+python3 scripts/bib2yaml.py citations.bib
+```
+
+New papers are merged into `data/publications.yaml`. Papers you already have are not duplicated, and your edits (`featured`, `note`, `doi`, `pdf`) are kept. The publications page shows 20 per page; change `publications_per_page` in `config/_default/hugo.yaml`.
+
+### Add a publication by hand
 
 Add an entry at any position in `data/publications.yaml` (the list is sorted by year automatically):
 

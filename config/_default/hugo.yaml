@@ -39,6 +39,8 @@ params:
     - Vanderbilt University Institute of Imaging Science (VUIIS)
     - 1161 21st Ave S, MCN D2205
     - Nashville, TN 37232, USA
+  # Number of publications per page on /publications/
+  publications_per_page: 20
   google_scholar: https://scholar.google.com/citations?user=nd0XQKwAAAAJ
   logo: media/lablogo.jpg
   # Browser-tab icon (antenna). PNG is used for Safari/iOS; SVG for modern browsers. Falls back to the logo if missing.
