@@ -10,6 +10,7 @@
       <span class="tag tag-type">{{ .type | humanize }}</span>
       {{ with .doi }}<a class="tag" href="https://doi.org/{{ . }}" rel="noopener">DOI</a>{{ end }}
       {{ with .pdf }}<a class="tag" href="{{ . }}" rel="noopener">PDF</a>{{ end }}
+      {{ if and .url (not .doi) (not (hasPrefix .url "https://scholar.google")) }}<a class="tag" href="{{ .url }}" rel="noopener">Full text</a>{{ end }}
     </div>
   </div>
 </li>

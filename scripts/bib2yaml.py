@@ -84,7 +84,8 @@ def short_author(name):
     else:
         parts = name.split()
         last, first = parts[-1], " ".join(parts[:-1])
-    initials = "".join(w[0].upper() for w in re.split(r"[\s\-.]+", first) if w)
+    # "John C" -> "JC"; already-abbreviated initials ("JC") are kept as is
+    initials = "".join(w if (w.isupper() and len(w) <= 3) else w[0].upper() for w in re.split(r"[\s\-.]+", first) if w)
     return f"{last} {initials}".strip()
 
 
@@ -92,7 +93,7 @@ def classify(etype, f):
     venue = (f.get("journal") or f.get("booktitle") or "").lower()
     if etype == "patent" or "patent" in venue or "patent" in f.get("note", "").lower():
         return "patent"
-    if "arxiv" in venue or "biorxiv" in venue or "medrxiv" in venue or "preprint" in venue:
+    if "arxiv" in venue or "authorea" in venue or "biorxiv" in venue or "medrxiv" in venue or "preprint" in venue:
         return "preprint"
     if etype == "article":
         return "journal"

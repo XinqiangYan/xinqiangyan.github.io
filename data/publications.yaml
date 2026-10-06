@@ -1,54 +1,537 @@
-# Publications list — rendered on /publications/ (newest first, grouped by year).
-#
-# Fields:
-#   title    (required)
-#   authors  (required) "Yan X" is automatically bolded
-#   venue    (required) journal / conference / patent office
-#   year     (required)
-#   type     journal | conference | patent | preprint | book
-#   details  optional volume/issue/pages, e.g. "9:3481"
-#   doi      optional, e.g. 10.1038/s41467-018-05585-8
-#   url      optional link (used when there is no DOI)
-#   pdf      optional link to a PDF
-#   featured true to also show on the home page
-#   note     optional badge text, e.g. "Featured article"
-#
-# NOTE: this is a starter list. Please check every entry against Google Scholar
-# and add the rest of the lab's papers, patents and abstracts.
+# Publications list, rendered on /publications/ (newest first).
+# Regenerate/merge from a Google Scholar BibTeX export with:
+#   python3 scripts/bib2yaml.py citations.bib [--only journal]
+# Fields: title, authors ("Yan X" is bolded), venue, details, year,
+#   type (journal | conference | patent | preprint | book), doi, url, pdf,
+#   featured (true = also on the home page), note (badge text).
+
+- title: "Anti-inflammatory treatment confirms rsfMRI and TSPO PET as biomarkers of functional connectivity and neuroinflammation in rat contusion spinal cord injuries"
+  authors: "Mu C, Reed JL, Wang F, Tantawy MN, Yan X, Lu M, Gore JC, Chen LM"
+  venue: "Scientific Reports"
+  details: "16(1):14066"
+  year: 2026
+  type: "journal"
+  doi: "10.1038/s41598-026-42844-x"
+
+- title: "Balun with One Inductor and Three Capacitors for MRI RF Coils"
+  authors: "Lu M, Gore JC, Yan X"
+  venue: "Journal of Magnetic Resonance Open"
+  details: "100227"
+  year: 2026
+  type: "journal"
+  url: "https://www.sciencedirect.com/science/article/pii/S2666441026000130"
+
+- title: "Coaxial capacitor (COCA) coil for stretchable arrays in ultrahigh-field MRI"
+  authors: "Lu M, Li P, Moore JE, Jiang X, Gore JC, Yan X"
+  venue: "AIP Advances"
+  details: "16(1)"
+  year: 2026
+  type: "journal"
+  url: "https://pubs.aip.org/aip/adv/article/16/1/015129/3378217"
+
+- title: "Fast electromagnetic and RF circuit co-simulation for passive resonator field calculation and optimization in MRI"
+  authors: "Zhang Z, Lu M, Liang H, Zu Z, Gu Y, Wang X, Huo Y, Yan X"
+  venue: "Magnetic Resonance Imaging"
+  details: "110644"
+  year: 2026
+  type: "journal"
+  url: "https://www.sciencedirect.com/science/article/pii/S0730725X26000378"
+
+- title: "Functional magnetic resonance imaging insights into nociceptive signal processing network in rat lumbar spinal cord"
+  authors: "Zhang X, Mu C, Mishra A, Wang F, Yang PF, Yan X, Lu M, Gore JC, Chen LM"
+  venue: "Pain Reports"
+  details: "11(2):e1368"
+  year: 2026
+  type: "journal"
+  url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12900226/"
+
+- title: "Low-Cost and Detunable Wireless Resonator Glasses for Enhanced Eye MRI With Concurrent High-Quality Whole-Brain MRI"
+  authors: "Lu M, Yang X, Moore JE, Li P, Anderson AW, Gore JC, Smith SA, Yan X"
+  venue: "Magnetic Resonance in Medicine"
+  details: "96(1):499-507"
+  year: 2026
+  type: "journal"
+  doi: "10.1002/mrm.70326"
+
+- title: "Quantifying the Transmit-Power Threshold for Reliable Passive Detuning of Inductively Coupled Wireless Resonators in MRI: A Phantom Study"
+  authors: "Lu M, Jiang X, Ma Y, Qian Y, Liao C, Yang Y, Gore JC, Yan X"
+  venue: "NMR in Biomedicine"
+  details: "39(11):e70408"
+  year: 2026
+  type: "journal"
+  doi: "10.1002/nbm.70408"
+
+- title: "Reducing RF-Induced Heating of DBS in 3 T MRI Using Dual-Role Receive Arrays as Wireless Resonators: A Simulation Study"
+  authors: "Zhang Z, Lu M, Lu Z, Huo Y, Yan X"
+  venue: "IEEE Access"
+  year: 2026
+  type: "journal"
+  url: "https://ieeexplore.ieee.org/iel8/6287639/11323511/11610671.pdf"
+
+- title: "Revisiting Inductively Coupled Wireless Coils in MRI: Mitigating Over-Coupling With Preamplifiers"
+  authors: "Lu M, Gore JC, Yan X"
+  venue: "Magnetic Resonance in Medicine"
+  year: 2026
+  type: "journal"
+  doi: "10.1002/mrm.70485"
+
+- title: "Detunable wireless ladder resonator inserts for enhanced SNR of local array coil at 1.5 T MRI"
+  authors: "Lu M, Wang R, Chen Y, Li R, Yang X, Liang H, Zhu H, Yan X"
+  venue: "Medical Physics"
+  details: "52(6):3649-3657"
+  year: 2025
+  type: "journal"
+  doi: "10.1002/mp.17731"
+
+- title: "Distinguishing hepatocellular carcinoma from cirrhotic regenerative nodules using MR cytometry"
+  authors: "Jiang X, Washington MK, Izzy MJ, Lu M, Yan X, Zu Z, Gore JC, Xu J"
+  venue: "Cancers"
+  details: "17(7):1204"
+  year: 2025
+  type: "journal"
+  url: "https://www.mdpi.com/2072-6694/17/7/1204"
+
+- title: "Dual-tuned floating solenoid balun for multi-nuclear MRI and MRS"
+  authors: "Yang Y, Zhang B, Lu M, Yan X"
+  venue: "Magnetic Resonance Imaging"
+  details: "115:110268"
+  year: 2025
+  type: "journal"
+  url: "https://www.sciencedirect.com/science/article/pii/S0730725X24002492"
+
+- title: "Fast-RF-Shimming: Accelerate RF shimming in 7T MRI using deep learning"
+  authors: "Lu Z, Liang H, Lu M, Wang X, Yan X, Huo Y"
+  venue: "Meta-Radiology"
+  details: "3(3):100166"
+  year: 2025
+  type: "journal"
+  url: "https://www.sciencedirect.com/science/article/pii/S2950162825000347"
+
+- title: "Flexible and shape-adjustable coaxial capacitor (COCA) coils for ultrahigh field MRI: A comparative analysis with rigid coils"
+  authors: "Lu M, Sun C, Jiang X, Moore JE, Gore JC, Yan X"
+  venue: "Journal of Magnetic Resonance"
+  details: "107955"
+  year: 2025
+  type: "journal"
+  url: "https://www.sciencedirect.com/science/article/pii/S1090780725001272"
+
+- title: "Float solenoid balun for MRI"
+  authors: "Lu M, Yang Y, Chai S, Yan X"
+  venue: "NMR in Biomedicine"
+  details: "38(1):e5292"
+  year: 2025
+  type: "journal"
+  doi: "10.1002/nbm.5292"
+
+- title: "Magnetic field probe-based co-simulation method for irregular volume-type inductively coupled wireless MRI radiofrequency coils"
+  authors: "Lu M, Liang H, Zhu H, Yan X"
+  venue: "Magnetic Resonance Imaging"
+  details: "117:110330"
+  year: 2025
+  type: "journal"
+  url: "https://www.sciencedirect.com/science/article/pii/S0730725X25000128"
+
+- title: "Noninvasive assessment of liver inflammation in metabolic dysfunction associated steatohepatitis using MR cytometry"
+  authors: "Jiang X, Washington MK, Izzy MJ, Piantek G, Lu M, Yan X, Gore JC, Xu J"
+  venue: "npj Imaging"
+  details: "3(1):17"
+  year: 2025
+  type: "journal"
+  doi: "10.1038/s44303-025-00080-4"
+
+- title: "PHASE: Personalized Head-based Automatic Simulation for Electromagnetic properties in 7T MRI"
+  authors: "Lu Z, Liang H, Lu M, Martin D, Hardy BM, Dawant BM, Wang X, Yan X, Huo Y"
+  venue: "Magnetic Resonance Imaging"
+  details: "110532"
+  year: 2025
+  type: "journal"
+  url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12515100/"
+
+- title: "Radiofrequency-transparent local B0 shimming coils using float traps"
+  authors: "Liu C, Liang H, Lu M, Gore JC, Sengupta S, Yan X"
+  venue: "Magnetic Resonance in Medicine"
+  details: "93(4):1833-1841"
+  year: 2025
+  type: "journal"
+  doi: "10.1002/mrm.30361"
+
+- title: "Reproducible and highly miniaturized bazooka RF Balun using a printed capacitor"
+  authors: "Lu M, Yang Y, Chai S, Yan X"
+  venue: "Magnetic Resonance in Medicine"
+  details: "93(1):422-432"
+  year: 2025
+  type: "journal"
+  doi: "10.1002/mrm.30268"
+
+- title: "Validation of qMT and CEST MRI as biomarkers of response to treatment after lumbar spinal cord injury in rats"
+  authors: "Mu C, Reed JL, Wang F, Yan X, Lu M, Gore JC, Chen LM"
+  venue: "NMR in Biomedicine"
+  details: "38(4):e70015"
+  year: 2025
+  type: "journal"
+  doi: "10.1002/nbm.70015"
+
+- title: "A cryogenic tune and match circuit for magnetic resonance microscopy at 15.2 T"
+  authors: "Hardy BM, Drake G, Chai S, Dhakal B, Martin JB, Xu J, Does MD, Anderson AW, Yan X, Gore JC"
+  venue: "Journal of Magnetic Resonance Open"
+  details: "18:100147"
+  year: 2024
+  type: "journal"
+  url: "https://www.sciencedirect.com/science/article/pii/S2666441024000025"
+
+- title: "A detunable wireless resonator insert for high-resolution TMJ MRI at 1.5 T"
+  authors: "Zhu H, Zhang Q, Li R, Chen Y, Zhang G, Wang R, Lu M, Yan X"
+  venue: "Journal of Magnetic Resonance"
+  details: "360:107650"
+  year: 2024
+  type: "journal"
+  url: "https://www.sciencedirect.com/science/article/pii/S109078072400034X"
+
+- title: "Detunable wireless Litzcage coil for human head MRI at 1.5 T"
+  authors: "Zhu H, Lang ML, Yang Y, Martin M, Zhang G, Zhang Q, Chen Y, Yan X"
+  venue: "NMR in Biomedicine"
+  details: "37(3):e5068"
+  year: 2024
+  type: "journal"
+  url: "https://www.researchgate.net/profile/Haoqin-Zhu/publication/375662719_Detunable_wireless_Litzcage_coil_for_human_head_MRI_at_15_T/links/6569655db86a1d521b1eca0f/Detunable-wireless-Litzcage-coil-for-human-head-MRI-at-15-T.pdf"
+
+- title: "Detunable wireless resonator arrays for TMJ MRI: A comparative study"
+  authors: "Zhu H, Zhang Q, Li R, Chen Y, Zhang G, Wang R, Lu M, Yan X"
+  venue: "Magnetic Resonance Imaging"
+  details: "111:84-89"
+  year: 2024
+  type: "journal"
+  url: "https://scholar.google.com/scholar?q=Detunable+wireless+resonator+arrays+for+TMJ+MRI%3A+A+comparative+study"
+
+- title: "Frequency-independent dual-tuned cable traps for multi-nuclear MRI and MRS"
+  authors: "Yang Y, Lu M, Yan X"
+  venue: "Journal of Magnetic Resonance"
+  details: "368:107786"
+  year: 2024
+  type: "journal"
+  url: "https://www.sciencedirect.com/science/article/pii/S1090780724001708"
+
+- title: "Implantable, bioresorbable radio frequency resonant circuits for magnetic resonance imaging"
+  authors: "Lee G, Does MD, Avila R, Kang J, Harkins KD, Wu Y, Banks WE, Park M, Lu D, Yan X, Kim JU, Won SM, et al."
+  venue: "Advanced Science"
+  details: "11(27):2301232"
+  year: 2024
+  type: "journal"
+  doi: "10.1002/advs.202301232"
 
 - title: "On the equivalence of demagnetization tensors as discrete cell size approaches zero in three-dimensional space"
   authors: "Liang H, Yan X"
   venue: "Journal of Applied Physics"
+  details: "136(8)"
   year: 2024
-  type: journal
+  type: "journal"
+  doi: "10.1063/5.0226603"
   featured: true
   note: "Featured article"
+
+- title: "Dark band artifact in transcranial MR-guided focused ultrasound: Mechanism and mitigation with passive crossed wire antennas"
+  authors: "Yan X, Allen S, Lu M, Moore D, Meyer CH, Grissom WA"
+  venue: "Magnetic Resonance Imaging"
+  details: "103:169-178"
+  year: 2023
+  type: "journal"
+  url: "https://www.sciencedirect.com/science/article/am/pii/S0730725X23001455"
+
+- title: "Improving Specific Absorption Rate Efficiency and Coil Robustness of Self-Decoupled Transmit/Receive Coils by Elevating Feed and Mode Conductors"
+  authors: "Lu M, Zhang X, Chai S, Yan X"
+  venue: "Sensors"
+  details: "23(4):1800"
+  year: 2023
+  type: "journal"
+  url: "https://www.mdpi.com/1424-8220/23/4/1800"
+
+- title: "Investigating local receive arrays in tcMRgFUS system and their influence by passive antennas: A simulation study"
+  authors: "Lu M, Yan X"
+  venue: "IEEE Access"
+  details: "11:143998-144005"
+  year: 2023
+  type: "journal"
+  url: "https://ieeexplore.ieee.org/iel7/6287639/10005208/10360831.pdf"
+
+- title: "Low-cost inductively coupled stacked wireless RF coil for MRI at 3 T"
+  authors: "Lu M, Chai S, Zhu H, Yan X"
+  venue: "NMR in Biomedicine"
+  details: "36(1):e4818"
+  year: 2023
+  type: "journal"
+  url: "https://www.researchgate.net/profile/Haoqin-Zhu/publication/362851558_Low-cost_Inductively_Coupled_Stacked_Wireless_RF_Coil_for_MRI_at_3T/links/63548d1812cbac6a3ee78326/Low-cost-Inductively-Coupled-Stacked-Wireless-RF-Coil-for-MRI-at-3T.pdf"
+
+- title: "Miniature and flexible bazooka balun for high-field MRI"
+  authors: "Chai S, Yan X"
+  venue: "Journal of Magnetic Resonance"
+  details: "356:107577"
+  year: 2023
+  type: "journal"
+  url: "https://www.sciencedirect.com/science/article/am/pii/S1090780723002124"
+
+- title: "Bench to bore ramifications of inter-subject head differences on RF shimming and specific absorption rates at 7T"
+  authors: "Hardy BM, Banik R, Yan X, Anderson AW"
+  venue: "Magnetic Resonance Imaging"
+  details: "92:187-196"
+  year: 2022
+  type: "journal"
+  url: "https://www.sciencedirect.com/science/article/am/pii/S0730725X22001205"
+
+- title: "Dual-tuned lattice balun for multi-nuclear MRI and MRS"
+  authors: "Zhu Y, Sappo CR, Grissom WA, Gore JC, Yan X"
+  venue: "IEEE Transactions on Medical Imaging"
+  details: "41(6):1420-1430"
+  year: 2022
+  type: "journal"
+  url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9812758/pdf/nihms-1850154.pdf"
+
+- title: "High-density MRI RF arrays using mixed dipole antennas and microstrip transmission line resonators"
+  authors: "Lu M, Sengupta S, Gore JC, Grissom WA, Yan X"
+  venue: "IEEE Transactions on Biomedical Engineering"
+  details: "69(10):3243-3252"
+  year: 2022
+  type: "journal"
+  url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9587496/pdf/nihms-1837321.pdf"
+
+- title: "Minimal artifact actively shimmed metallic needles in MRI"
+  authors: "Sengupta S, Yan X, Hoyt TL, Drake G, Gunderman A, Chen Y"
+  venue: "Magnetic Resonance in Medicine"
+  details: "87(1):541-550"
+  year: 2022
+  type: "journal"
+  url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8868020/"
+
+- title: "On the design and manufacturing of miniaturized microstripline power splitters for driving multicoil transmit arrays with arbitrary ratios at 7 T"
+  authors: "Sappo CR, Gallego GL, Grissom WA, Yan X"
+  venue: "NMR in Biomedicine"
+  details: "35(11):e4793"
+  year: 2022
+  type: "journal"
+  url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11193150/pdf/nihms-1997713.pdf"
+
+- title: "Resistor-free and one-board-fits-all ratio adjustable power splitter for add-on RF shimming in high field MRI"
+  authors: "Zhu Y, Lu M, Yan X"
+  venue: "Journal of Magnetic Resonance"
+  details: "338:107194"
+  year: 2022
+  type: "journal"
+  url: "https://www.sciencedirect.com/science/article/am/pii/S1090780722000520"
+
+- title: "RF shielding designs for birdcage coils for preclinical MRI at 9.4 T"
+  authors: "Yang Z, Lu M, Drake G, Wang F, Yang PF, Chen LM, Gore JC, Yan X"
+  venue: "Magnetic Resonance Imaging"
+  details: "94:1-6"
+  year: 2022
+  type: "journal"
+  url: "https://www.sciencedirect.com/science/article/am/pii/S0730725X22001527"
+
+- title: "Design and construction of an interchangeable RF coil system for rodent spinal cord MR imaging at 9.4 T"
+  authors: "Lu M, Drake G, Wang F, Mu C, Chen LM, Gore JC, Yan X"
+  venue: "Magnetic Resonance Imaging"
+  details: "84:124-131"
+  year: 2021
+  type: "journal"
+  url: "https://www.sciencedirect.com/science/article/am/pii/S0730725X21001661"
+
+- title: "Hybrid-pair ratio adjustable power splitters for add-on RF shimming and array-compressed parallel transmission"
+  authors: "Zhu Y, Lu M, Grissom WA, Gore JC, Yan X"
+  venue: "Magnetic Resonance in Medicine"
+  details: "86(6):3382-3390"
+  year: 2021
+  type: "journal"
+  url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8568636/"
+
+- title: "k-Space Domain Parallel Transmit Pulse Design"
+  authors: "Ma J, Gruber B, Yan X, Grissom WA"
+  venue: "Magnetic Resonance in Medicine"
+  details: "85(5):2568-2579"
+  year: 2021
+  type: "journal"
+  url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7902435/pdf/nihms-1642717.pdf"
+
+- title: "Optimization of a quadrature birdcage coil for functional imaging of squirrel monkey brain at 9.4 T"
+  authors: "Lu M, Yang Z, Wang F, Drake G, Chen LM, Gore JC, Yan X"
+  venue: "Magnetic Resonance Imaging"
+  details: "79:45-51"
+  year: 2021
+  type: "journal"
+  url: "https://www.sciencedirect.com/science/article/am/pii/S0730725X21000448"
+
+- title: "Sensitivity and specificity of CEST and NOE MRI in injured spinal cord in monkeys"
+  authors: "Wang F, Zu Z, Wu TL, Yan X, Lu M, Yang PF, Byun NE, Reed JL, Gore JC, Chen LM"
+  venue: "NeuroImage: Clinical"
+  details: "30:102633"
+  year: 2021
+  type: "journal"
+  url: "https://www.sciencedirect.com/science/article/pii/S2213158221000772"
+
+- title: "Designing parallel transmit head coil arrays based on radiofrequency pulse performance"
+  authors: "Cao Z, Yan X, Gore JC, Grissom WA"
+  venue: "Magnetic Resonance in Medicine"
+  details: "83(6):2331-2342"
+  year: 2020
+  type: "journal"
+  url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7047538/"
+
+- title: "Optimization of a transmit/receive surface coil for squirrel monkey spinal cord imaging"
+  authors: "Lu M, Wang F, Chen LM, Gore JC, Yan X"
+  venue: "Magnetic Resonance Imaging"
+  details: "68:197-202"
+  year: 2020
+  type: "journal"
+  url: "https://www.sciencedirect.com/science/article/am/pii/S0730725X20300394"
+
+- title: "Over-overlapped loop arrays: A numerical study"
+  authors: "Lu M, Gore JC, Yan X"
+  venue: "Magnetic Resonance Imaging"
+  details: "72:135-142"
+  year: 2020
+  type: "journal"
+  url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7443860/"
+
+- title: "Ratio-adjustable power splitters for array-compressed parallel transmission"
+  authors: "Yan X, Cao Z, Grissom WA"
+  venue: "Magnetic Resonance in Medicine"
+  details: "79(4):2422-2431"
+  year: 2018
+  type: "journal"
+  url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5792383/pdf/nihms915591.pdf"
 
 - title: "Self-decoupled radiofrequency coils for magnetic resonance imaging"
   authors: "Yan X, Gore JC, Grissom WA"
   venue: "Nature Communications"
   details: "9:3481"
   year: 2018
-  type: journal
-  doi: 10.1038/s41467-018-05585-8
-  pdf: https://www.nature.com/articles/s41467-018-05585-8.pdf
+  type: "journal"
+  doi: "10.1038/s41467-018-05585-8"
+  pdf: "https://www.nature.com/articles/s41467-018-05585-8.pdf"
   featured: true
+
+- title: "Traveling-wave meets standing-wave: A simulation study using pair-of-transverse-dipole-ring coils for adjustable longitudinal coverage in ultra-high field MRI"
+  authors: "Yan X, Gore JC, Grissom WA"
+  venue: "Concepts in Magnetic Resonance Part B: Magnetic Resonance Engineering"
+  details: "48(4)"
+  year: 2018
+  type: "journal"
+  url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6715133/"
+
+- title: "Improved traveling-wave efficiency in 7 T human MRI using passive local loop and dipole arrays"
+  authors: "Yan X, Zhang X, Gore JC, Grissom WA"
+  venue: "Magnetic Resonance Imaging"
+  details: "39:103-109"
+  year: 2017
+  type: "journal"
+  url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5410385/"
 
 - title: "New resonator geometries for ICE decoupling of loop arrays"
   authors: "Yan X, Gore JC, Grissom WA"
   venue: "Journal of Magnetic Resonance"
+  details: "277:59-67"
   year: 2017
-  type: journal
+  type: "journal"
+  url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5389865/pdf/nihms854692.pdf"
   featured: true
+
+- title: "Array-compressed parallel transmit pulse design"
+  authors: "Cao Z, Yan X, Grissom WA"
+  venue: "Magnetic Resonance in Medicine"
+  details: "76(4):1158-1169"
+  year: 2016
+  type: "journal"
+  url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4848238/pdf/nihms727537.pdf"
+
+- title: "Eight-channel monopole array using ICE decoupling for human head MR imaging at 7 T"
+  authors: "Yan X, Wei L, Chu S, Xue R, Zhang X"
+  venue: "Applied Magnetic Resonance"
+  details: "47(5):527-538"
+  year: 2016
+  type: "journal"
+  url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5638452/"
+
+- title: "Experimental implementation of array-compressed parallel transmission at 7 tesla"
+  authors: "Yan X, Cao Z, Grissom WA"
+  venue: "Magnetic Resonance in Medicine"
+  details: "75(6):2545-2552"
+  year: 2016
+  type: "journal"
+  url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5321687/"
+
+- title: "Optimizing the ICE decoupling element distance to improve monopole antenna arrays for 7 Tesla MRI"
+  authors: "Yan X, Zhang X, Xue R, Gore JC, Grissom WA"
+  venue: "Magnetic Resonance Imaging"
+  details: "34(9):1264-1268"
+  year: 2016
+  type: "journal"
+  url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5055440/"
+
+- title: "Simulation verification of SNR and parallel imaging improvements by ICE-decoupled loop array in MRI"
+  authors: "Yan X, Cao Z, Zhang X"
+  venue: "Applied Magnetic Resonance"
+  details: "47(4):395-403"
+  year: 2016
+  type: "journal"
+  url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4808813/"
+
+- title: "Closely spaced double-row microstrip RF arrays for parallel MR imaging at ultrahigh fields"
+  authors: "Yan X, Xue R, Zhang X"
+  venue: "Applied Magnetic Resonance"
+  details: "46(11):1239-1248"
+  year: 2015
+  type: "journal"
+  url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4617305/pdf/nihms704032.pdf"
+
+- title: "Decoupling and matching network for monopole antenna arrays in ultrahigh field MRI"
+  authors: "Yan X, Zhang X"
+  venue: "Quantitative Imaging in Medicine and Surgery"
+  details: "5(4):546"
+  year: 2015
+  type: "journal"
+  url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4559973/"
+
+- title: "Design and test of magnetic wall decoupling for dipole transmit/receive array for MR imaging at the ultrahigh field of 7T"
+  authors: "Yan X, Zhang X, Wei L, Xue R"
+  venue: "Applied Magnetic Resonance"
+  details: "46(1):59-66"
+  year: 2015
+  type: "journal"
+  url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5612434/pdf/nihms849587.pdf"
+
+- title: "Hybrid monopole/loop coil array for human head MR imaging at 7 T"
+  authors: "Yan X, Wei L, Xue R, Zhang X"
+  venue: "Applied Magnetic Resonance"
+  details: "46(5):541-550"
+  year: 2015
+  type: "journal"
+  url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4479412/"
 
 - title: "Multichannel double-row transmission line array for human MR imaging at ultrahigh fields"
   authors: "Yan X, Pedersen JO, Wei L, Zhang X, Xue R"
   venue: "IEEE Transactions on Biomedical Engineering"
+  details: "62(6):1652-1659"
   year: 2015
-  type: journal
+  type: "journal"
+  url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5319868/"
+
+- title: "Theoretical analysis of magnetic wall decoupling method for radiative antenna arrays in ultrahigh magnetic field MRI"
+  authors: "Yan X, Xie Z, Pedersen JO, Zhang X"
+  venue: "Concepts in Magnetic Resonance Part B: Magnetic Resonance Engineering"
+  details: "45(4)"
+  year: 2015
+  type: "journal"
+  url: "https://scholar.google.com/scholar?q=Theoretical+analysis+of+magnetic+wall+decoupling+method+for+radiative+antenna+arrays+in+ultrahigh+magnetic+field+MRI"
 
 - title: "A monopole/loop dual-tuned RF coil for ultrahigh field MRI"
   authors: "Yan X, Xue R, Zhang X"
   venue: "Quantitative Imaging in Medicine and Surgery"
+  details: "4(4):225"
   year: 2014
-  type: journal
+  type: "journal"
+  url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4137181/"
+
+- title: "Optimization of an 8-channel loop-array coil for a 7 T MRI system with the guidance of a co-simulation approach"
+  authors: "Yan X, Ma CX, Shi L, Zhuo Y, Zhou XJ, Wei L, Xue R"
+  venue: "Applied Magnetic Resonance"
+  details: "45(5):437-449"
+  year: 2014
+  type: "journal"
+  url: "https://drive.google.com/file/u/0/d/1u46Ai7Sg7J3nDJmrWD-6Jg2MVbShiHgE/view"

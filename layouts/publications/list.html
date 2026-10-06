@@ -9,9 +9,9 @@
         {{ partial "icon.html" "search" }}
         <input type="search" placeholder="Search title, author, journal…" aria-label="Search publications" data-pub-search>
       </label>
-      <div class="filters" role="toolbar" aria-label="Filter by type" data-filter-group="pubs">
+      {{ $types := slice }}{{ range $pubs }}{{ $types = $types | append .type }}{{ end }}
+      <div class="filters" role="toolbar" aria-label="Filter by type" data-filter-group="pubs"{{ if le (len (uniq $types)) 1 }} hidden{{ end }}>
         <button class="chip is-active" data-filter="all">All <span>{{ len $pubs }}</span></button>
-        {{ $types := slice }}{{ range $pubs }}{{ $types = $types | append .type }}{{ end }}
         {{ range uniq $types }}{{ $t := . }}<button class="chip" data-filter="{{ $t }}">{{ $t | humanize }} <span>{{ len (where $pubs "type" $t) }}</span></button>{{ end }}
       </div>
       <a class="btn btn-outline btn-sm" href="{{ site.Params.google_scholar }}" rel="noopener">{{ partial "icon.html" "scholar" }} Google Scholar</a>
