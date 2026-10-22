@@ -105,6 +105,7 @@
 </section>
 {{ end }}
 
+{{ if site.Params.show_people }}
 <section class="team-band">
   {{ with resources.Get site.Params.team_image }}{{ with .Resize "1920x webp" }}<img src="{{ .RelPermalink }}" alt="Yan Lab team photo" loading="lazy">{{ end }}{{ end }}
   <div class="container team-band-copy">
@@ -113,6 +114,7 @@
     <a class="btn btn-light" href="{{ "/people/" | relURL }}">Meet the team {{ partial "icon.html" "arrow" }}</a>
   </div>
 </section>
+{{ end }}
 
 {{ partial "cta.html" . }}
 {{ end }}

@@ -20,7 +20,7 @@ hugo server
 | Research page text | `content/research/_index.md` |
 | **Publications** | `data/publications.yaml` |
 | **Products** | `content/products/<product>/index.md` |
-| People | `content/people/<name>/index.md` and `avatar.png` |
+| People (currently hidden) | `content/people/<name>/index.md` and `avatar.png`. To show again: remove the `build`/`cascade` blocks in `content/people/_index.md`, uncomment the People menu item and set `show_people: true` in `config/_default/hugo.yaml` |
 | News | `content/news/<post>/index.md` (+ optional `featured.jpg`) |
 | Contact page | `content/contact/index.md` |
 | Colors, fonts, spacing | `assets/css/main.css` (variables at the top) |

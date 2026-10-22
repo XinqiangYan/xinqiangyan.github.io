@@ -48,6 +48,8 @@ params:
   favicon_svg: media/favicon.svg
   hero_image: media/soldering.jpg
   team_image: media/coders.jpg
+  # Show the "The team" photo band on the home page (links to /people/).
+  show_people: false
 
 menus:
   main:
@@ -60,9 +62,11 @@ menus:
     - name: Publications
       url: /publications/
       weight: 30
-    - name: People
-      url: /people/
-      weight: 40
+    # People page is hidden for now (show_people: false). To bring it back,
+    # uncomment these lines and remove the `build` settings in content/people/_index.md.
+    # - name: People
+    #   url: /people/
+    #   weight: 40
     - name: News
       url: /news/
       weight: 50
